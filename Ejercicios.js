@@ -20,23 +20,13 @@ console.log(grados + " grados son " + radianes + " radianes."); //Se imprime con
 
 //4.Calcula seno y coseno de un ángulo en grados
 
-let rad = 3*Math.PI/2 //Leemos el grado en radianes
-res = Math.sin(rad) // obtenemos el resultado de seno del grado en radianes
-let asin = Math.asin(res); //Obtenemos el seno inverso de la función
-let grados = asin*180/Math.PI; //convertimos a grados
-if(grados<0)
-{
-    grados+=360;
-}
-console.log("El seno de: "+rad+ " es: "+grados);
-
-let rad2 = Math.PI/2 //Leemos el grado en radianes
-res2 = Math.cos(rad2) // obtenemos el resultado de coseno del grado en radianes
-console.log(rad2)
-let acos = Math.acos(res2); //Obtenemos el seno inverso de la función
-let grados2 = acos*180/Math.PI; //convertimos a grados
-
-console.log("El coseno de: "+rad2+ " es: "+grados2);
+let rad = 3*Math.PI/2;
+let sin = Math.sin(rad);
+let cos = Math.cos(rad);
+let asin = Math.asin(sin);
+let acos = Math.acos(cos);
+console.log("El seno de " + rad + "en grados es: "+ Math.round(asin*180/Math.PI));
+console.log("El coseno de "+ rad + "en grado es: " + Math.round(acos*180/Math.PI));
 
 //5.Calcula la distancia recorrida por un objeto en caída libre
 
@@ -94,5 +84,3 @@ let s = (a + b + c)/2; //Se calcula el semiperímetro
 let areaTi = Math.sqrt(s*(s-a)*(s-b)*(s-c));// Se calcula el área mediante la fórmula de Heron
 
 console.log("El área del triángulo es: "+ areaTi); //Se imprime el resultado
-
-
