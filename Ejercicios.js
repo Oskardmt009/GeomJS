@@ -14,7 +14,7 @@ console.log("La hipotenusa del triángulo rectángulo es: " + h); //Se imprime e
 
 //3.Convierte grados a radianes
 
-let = grados = 270; //Se lee los grados
+let grados = 270; //Se lee los grados
 let radianes = grados * (Math.PI / 180); //Se hace la conversión a radianes
 console.log(grados + " grados son " + radianes + " radianes."); //Se imprime con el resultado
 
